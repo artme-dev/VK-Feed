@@ -4,6 +4,6 @@ target 'VK Feed' do
   use_frameworks!
 
   # Pods for VK Feed
-  pod "VK-ios-sdk" 
+  pod 'SwiftyVK'
 
 end

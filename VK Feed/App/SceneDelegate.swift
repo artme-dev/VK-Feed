@@ -10,13 +10,21 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var networkService: VKNetworkService?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: scene)
         window.makeKeyAndVisible()
-        window.rootViewController = ViewController()
+
+        let authService = VKAuthService()
+        authService.delegate = self
+        let authViewController = AuthViewController()
+        authViewController.vkAuthService = authService
+        
+        networkService = VKNetworkService(vkAuthService: authService)
+        
+        window.rootViewController = authViewController
         self.window = window
     }
 
@@ -47,7 +55,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
 }
 
+extension SceneDelegate: VKAuthServiceDelegate{
+    func authServiceNeedToPresent(viewController: UIViewController) {
+        viewController.view.backgroundColor = .red
+        window?.rootViewController?.present(viewController, animated: true, completion: nil)
+    }
+    
+    func authenticationFinished() {
+        let feedViewController = FeedViewController()
+        feedViewController.title = "Feed"
+        feedViewController.networkService = networkService
+        let feefNavigationVC = UINavigationController(rootViewController: feedViewController)
+        feedViewController.navigationController?.navigationBar.prefersLargeTitles = true
+        window?.rootViewController?.present(feefNavigationVC, animated: true, completion: nil)
+    }
+    
+    func authenticationFailed() {
+        print(#function)
+    }
+}

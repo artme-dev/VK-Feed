@@ -3,31 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4C9D3BFB96925F506A6B4933 /* Pods_VK_Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F5AEDB052CCA56F3F3536B /* Pods_VK_Feed.framework */; };
+		A222D98A26C0D20000EC67BE /* VKAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A222D98926C0D20000EC67BE /* VKAuthService.swift */; };
 		A2E6F33C26BF80B20083D45B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6F33B26BF80B20083D45B /* AppDelegate.swift */; };
 		A2E6F33E26BF80B20083D45B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6F33D26BF80B20083D45B /* SceneDelegate.swift */; };
-		A2E6F34026BF80B20083D45B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6F33F26BF80B20083D45B /* ViewController.swift */; };
-		A2E6F34326BF80B20083D45B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E6F34126BF80B20083D45B /* Main.storyboard */; };
 		A2E6F34526BF80B30083D45B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E6F34426BF80B30083D45B /* Assets.xcassets */; };
 		A2E6F34826BF80B30083D45B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E6F34626BF80B30083D45B /* LaunchScreen.storyboard */; };
+		A2E6F35426BF95F80083D45B /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6F35326BF95F80083D45B /* AuthViewController.swift */; };
+		A2E6F35926BFA2E40083D45B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6F35826BFA2E40083D45B /* FeedViewController.swift */; };
+		A2E6F35D26BFCD0C0083D45B /* VkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6F35C26BFCD0C0083D45B /* VkAPI.swift */; };
+		A2E6F35F26BFCEF70083D45B /* VKNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6F35E26BFCEF70083D45B /* VKNetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0244E9B4248F3B58945BF1E5 /* Pods-VK Feed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK Feed.debug.xcconfig"; path = "Target Support Files/Pods-VK Feed/Pods-VK Feed.debug.xcconfig"; sourceTree = "<group>"; };
 		48AD9B9E16EA6B6FC79494A3 /* Pods-VK Feed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK Feed.release.xcconfig"; path = "Target Support Files/Pods-VK Feed/Pods-VK Feed.release.xcconfig"; sourceTree = "<group>"; };
 		96F5AEDB052CCA56F3F3536B /* Pods_VK_Feed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_Feed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A222D98926C0D20000EC67BE /* VKAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKAuthService.swift; sourceTree = "<group>"; };
 		A2E6F33826BF80B20083D45B /* VK Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK Feed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E6F33B26BF80B20083D45B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2E6F33D26BF80B20083D45B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A2E6F33F26BF80B20083D45B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A2E6F34226BF80B20083D45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2E6F34426BF80B30083D45B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2E6F34726BF80B30083D45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2E6F34926BF80B30083D45B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2E6F35326BF95F80083D45B /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		A2E6F35826BFA2E40083D45B /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		A2E6F35C26BFCD0C0083D45B /* VkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkAPI.swift; sourceTree = "<group>"; };
+		A2E6F35E26BFCEF70083D45B /* VKNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKNetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +77,58 @@
 		A2E6F33A26BF80B20083D45B /* VK Feed */ = {
 			isa = PBXGroup;
 			children = (
-				A2E6F33B26BF80B20083D45B /* AppDelegate.swift */,
-				A2E6F33D26BF80B20083D45B /* SceneDelegate.swift */,
-				A2E6F33F26BF80B20083D45B /* ViewController.swift */,
-				A2E6F34126BF80B20083D45B /* Main.storyboard */,
-				A2E6F34426BF80B30083D45B /* Assets.xcassets */,
-				A2E6F34626BF80B30083D45B /* LaunchScreen.storyboard */,
 				A2E6F34926BF80B30083D45B /* Info.plist */,
+				A2E6F35626BF96830083D45B /* App */,
+				A2E6F35226BF95D10083D45B /* Auth */,
+				A2E6F35726BFA2C80083D45B /* Feed */,
+				A2E6F34F26BF8F670083D45B /* Services */,
+				A2E6F35526BF96750083D45B /* Resources */,
 			);
 			path = "VK Feed";
+			sourceTree = "<group>";
+		};
+		A2E6F34F26BF8F670083D45B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A222D98926C0D20000EC67BE /* VKAuthService.swift */,
+				A2E6F35C26BFCD0C0083D45B /* VkAPI.swift */,
+				A2E6F35E26BFCEF70083D45B /* VKNetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A2E6F35226BF95D10083D45B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				A2E6F35326BF95F80083D45B /* AuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		A2E6F35526BF96750083D45B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2E6F34426BF80B30083D45B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A2E6F35626BF96830083D45B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A2E6F33B26BF80B20083D45B /* AppDelegate.swift */,
+				A2E6F33D26BF80B20083D45B /* SceneDelegate.swift */,
+				A2E6F34626BF80B30083D45B /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A2E6F35726BFA2C80083D45B /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				A2E6F35826BFA2E40083D45B /* FeedViewController.swift */,
+			);
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		BFD7CB0E5A7CCE15B031CE0D /* Pods */ = {
@@ -88,7 +137,6 @@
 				0244E9B4248F3B58945BF1E5 /* Pods-VK Feed.debug.xcconfig */,
 				48AD9B9E16EA6B6FC79494A3 /* Pods-VK Feed.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,7 +201,6 @@
 			files = (
 				A2E6F34826BF80B30083D45B /* LaunchScreen.storyboard in Resources */,
 				A2E6F34526BF80B30083D45B /* Assets.xcassets in Resources */,
-				A2E6F34326BF80B20083D45B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,8 +253,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2E6F34026BF80B20083D45B /* ViewController.swift in Sources */,
+				A2E6F35426BF95F80083D45B /* AuthViewController.swift in Sources */,
 				A2E6F33C26BF80B20083D45B /* AppDelegate.swift in Sources */,
+				A2E6F35926BFA2E40083D45B /* FeedViewController.swift in Sources */,
+				A2E6F35D26BFCD0C0083D45B /* VkAPI.swift in Sources */,
+				A2E6F35F26BFCEF70083D45B /* VKNetworkService.swift in Sources */,
+				A222D98A26C0D20000EC67BE /* VKAuthService.swift in Sources */,
 				A2E6F33E26BF80B20083D45B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,14 +266,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A2E6F34126BF80B20083D45B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2E6F34226BF80B20083D45B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A2E6F34626BF80B30083D45B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
