@@ -2,41 +2,44 @@
 //  AuthViewController.swift
 //  VK Feed
 //
-//  Created by Артём on 08.08.2021.
+//  Created by Артём on 15.08.2021.
 //
 
 import UIKit
 
 class AuthViewController: UIViewController {
-    
-    var vkAuthService: VKAuthService?
-    
-    private let authButton: UIButton = {
-        let button = UIButton(type: .roundedRect)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Авторизоваться", for: .normal)
-        button.setTitleColor(UIColor(named: "VkBrandColor"), for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 32)
-        return button
-    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .white
-        view.addSubview(authButton)
-        configureAuthButton()
-    }
-    
-    func configureAuthButton(){
-        authButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        authButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        view.backgroundColor = .vkBackground
         
-        authButton.addTarget(self, action: #selector(authenticate), for: .touchUpInside)
+        VKAuthService.shared.delegate = self
+        VKAuthService.shared.wakeUpSession()
     }
-    
-    @objc func authenticate(){
-        guard let service = vkAuthService else { return }
-        service.wakeUpSession()
+}
+
+extension AuthViewController: VKAuthServiceDelegate{
+    func authServiceNeedToPresent(viewController: UIViewController) {
+        DispatchQueue.main.async {
+//            viewController.modalPresentationStyle = .fullScreen
+//            viewController.modalTransitionStyle = .crossDissolve
+//            viewController.view.backgroundColor = .white
+            
+            self.present(viewController, animated: true, completion: nil)
+        }
+    }
+    func authenticationFinished() {
+        DispatchQueue.main.async {
+            let feedViewController = UINavigationController(rootViewController: NewsFeedViewController())
+            
+            feedViewController.modalPresentationStyle = .fullScreen
+//            feedViewController.modalTransitionStyle = .crossDissolve
+            
+            self.present(feedViewController, animated: true, completion: nil)
+            
+        }
+    }
+    func authenticationFailed() {
+        print(#function)
     }
 }

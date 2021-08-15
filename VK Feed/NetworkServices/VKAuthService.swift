@@ -8,7 +8,7 @@
 import Foundation
 import SwiftyVK
 
-protocol VKAuthServiceDelegate {
+protocol VKAuthServiceDelegate: AnyObject {
     func authServiceNeedToPresent(viewController: UIViewController)
     func authenticationFinished()
     func authenticationFailed()
@@ -16,14 +16,16 @@ protocol VKAuthServiceDelegate {
 
 final class VKAuthService{
     private let currentAppId = "7921565"
-    private let scopes: Scopes = [Scopes.offline,
+    private let scopes: Scopes = [Scopes.friends,
                                   Scopes.photos,
                                   Scopes.wall]
     
-    var delegate: VKAuthServiceDelegate?
+    weak var delegate: VKAuthServiceDelegate?
     var accessToken: String?
     
-    init(){
+    static let shared = VKAuthService()
+    
+    private init(){
         VK.setUp(appId: currentAppId, delegate: self)
     }
     
