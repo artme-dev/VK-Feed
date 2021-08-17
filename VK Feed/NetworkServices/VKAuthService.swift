@@ -18,7 +18,8 @@ final class VKAuthService{
     private let currentAppId = "7921565"
     private let scopes: Scopes = [Scopes.friends,
                                   Scopes.photos,
-                                  Scopes.wall]
+                                  Scopes.wall,
+                                  Scopes.offline]
     
     weak var delegate: VKAuthServiceDelegate?
     var accessToken: String?

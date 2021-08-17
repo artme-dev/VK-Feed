@@ -34,13 +34,7 @@ final class VKNetworkDataFetcher: NetworkDataFetcher{
     private func decode<T: Decodable>(type: T.Type, from data: Data) -> T?{
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        do{
-            let stringFormat = String(data: data, encoding: .utf8)
-            print(String(describing: stringFormat))
-            
-            let json = try JSONSerialization.jsonObject(with: data, options: [])
-            print(json)
-                
+        do{                
             let result = try decoder.decode(T.self, from: data)
             return result
         } catch let error{

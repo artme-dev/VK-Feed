@@ -12,8 +12,11 @@
 		A2E6F33E26BF80B20083D45B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6F33D26BF80B20083D45B /* SceneDelegate.swift */; };
 		A2E6F34526BF80B30083D45B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E6F34426BF80B30083D45B /* Assets.xcassets */; };
 		A2E6F34826BF80B30083D45B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E6F34626BF80B30083D45B /* LaunchScreen.storyboard */; };
-		A2ED207226C8FE94007247FA /* UIViewBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED206E26C8FE94007247FA /* UIViewBorder.swift */; };
-		A2ED207326C8FE94007247FA /* UIRoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED206F26C8FE94007247FA /* UIRoundImageView.swift */; };
+		A2E8830226C9EF1800E373DE /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E8830126C9EF1800E373DE /* WebImageView.swift */; };
+		A2E8830426CA811400E373DE /* StringRectHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E8830326CA811400E373DE /* StringRectHeight.swift */; };
+		A2E8830626CB910300E373DE /* CellHeightCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E8830526CB910300E373DE /* CellHeightCalculator.swift */; };
+		A2ED207226C8FE94007247FA /* UIViewBorders.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED206E26C8FE94007247FA /* UIViewBorders.swift */; };
+		A2ED207326C8FE94007247FA /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED206F26C8FE94007247FA /* RoundImageView.swift */; };
 		A2ED207426C8FE94007247FA /* AssetsUIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED207026C8FE94007247FA /* AssetsUIColors.swift */; };
 		A2ED207526C8FE94007247FA /* UIViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED207126C8FE94007247FA /* UIViewConstraints.swift */; };
 		A2ED207D26C8FEEC007247FA /* VKNetworkDataFetchet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED207826C8FEEC007247FA /* VKNetworkDataFetchet.swift */; };
@@ -43,8 +46,11 @@
 		A2E6F34426BF80B30083D45B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2E6F34726BF80B30083D45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2E6F34926BF80B30083D45B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2ED206E26C8FE94007247FA /* UIViewBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewBorder.swift; sourceTree = "<group>"; };
-		A2ED206F26C8FE94007247FA /* UIRoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIRoundImageView.swift; sourceTree = "<group>"; };
+		A2E8830126C9EF1800E373DE /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
+		A2E8830326CA811400E373DE /* StringRectHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringRectHeight.swift; sourceTree = "<group>"; };
+		A2E8830526CB910300E373DE /* CellHeightCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeightCalculator.swift; sourceTree = "<group>"; };
+		A2ED206E26C8FE94007247FA /* UIViewBorders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewBorders.swift; sourceTree = "<group>"; };
+		A2ED206F26C8FE94007247FA /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		A2ED207026C8FE94007247FA /* AssetsUIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsUIColors.swift; sourceTree = "<group>"; };
 		A2ED207126C8FE94007247FA /* UIViewConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewConstraints.swift; sourceTree = "<group>"; };
 		A2ED207826C8FEEC007247FA /* VKNetworkDataFetchet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKNetworkDataFetchet.swift; sourceTree = "<group>"; };
@@ -137,10 +143,12 @@
 		A2ED206D26C8FE94007247FA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				A2ED206E26C8FE94007247FA /* UIViewBorder.swift */,
-				A2ED206F26C8FE94007247FA /* UIRoundImageView.swift */,
+				A2ED206E26C8FE94007247FA /* UIViewBorders.swift */,
+				A2E8830126C9EF1800E373DE /* WebImageView.swift */,
+				A2ED206F26C8FE94007247FA /* RoundImageView.swift */,
 				A2ED207026C8FE94007247FA /* AssetsUIColors.swift */,
 				A2ED207126C8FE94007247FA /* UIViewConstraints.swift */,
+				A2E8830326CA811400E373DE /* StringRectHeight.swift */,
 			);
 			name = Helpers;
 			path = App/Helpers;
@@ -173,11 +181,12 @@
 		A2ED208426C8FF59007247FA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A2E8830526CB910300E373DE /* CellHeightCalculator.swift */,
+				A2ED208926C8FF59007247FA /* FeedTableViewCell.swift */,
 				A2ED208526C8FF59007247FA /* PostInfoView.swift */,
+				A2ED208826C8FF59007247FA /* PostContentView.swift */,
 				A2ED208626C8FF59007247FA /* PostActionButton.swift */,
 				A2ED208726C8FF59007247FA /* PostActionsView.swift */,
-				A2ED208826C8FF59007247FA /* PostContentView.swift */,
-				A2ED208926C8FF59007247FA /* FeedTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -316,8 +325,8 @@
 				A2E6F33C26BF80B20083D45B /* AppDelegate.swift in Sources */,
 				A2ED207526C8FE94007247FA /* UIViewConstraints.swift in Sources */,
 				A2ED208A26C8FF59007247FA /* PostInfoView.swift in Sources */,
-				A2ED207326C8FE94007247FA /* UIRoundImageView.swift in Sources */,
-				A2ED207226C8FE94007247FA /* UIViewBorder.swift in Sources */,
+				A2ED207326C8FE94007247FA /* RoundImageView.swift in Sources */,
+				A2ED207226C8FE94007247FA /* UIViewBorders.swift in Sources */,
 				A2ED208126C8FEEC007247FA /* VKResponseModels.swift in Sources */,
 				A2ED208C26C8FF59007247FA /* PostActionsView.swift in Sources */,
 				A2ED207F26C8FEEC007247FA /* VKApiConstants.swift in Sources */,
@@ -328,11 +337,14 @@
 				A2ED207E26C8FEEC007247FA /* VKNetworkService.swift in Sources */,
 				A2ED207D26C8FEEC007247FA /* VKNetworkDataFetchet.swift in Sources */,
 				A2ED209D26C9036A007247FA /* NewsFeedPresenter.swift in Sources */,
+				A2E8830626CB910300E373DE /* CellHeightCalculator.swift in Sources */,
 				A2ED208D26C8FF59007247FA /* PostContentView.swift in Sources */,
 				A2ED208B26C8FF59007247FA /* PostActionButton.swift in Sources */,
 				A2ED209026C8FF71007247FA /* NewsFeedModels.swift in Sources */,
+				A2E8830426CA811400E373DE /* StringRectHeight.swift in Sources */,
 				A2E6F33E26BF80B20083D45B /* SceneDelegate.swift in Sources */,
 				A2ED209C26C9036A007247FA /* NewsFeedInteractor.swift in Sources */,
+				A2E8830226C9EF1800E373DE /* WebImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
