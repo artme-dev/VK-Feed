@@ -9,17 +9,17 @@
 /* Begin PBXBuildFile section */
 		4C9D3BFB96925F506A6B4933 /* Pods_VK_Feed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F5AEDB052CCA56F3F3536B /* Pods_VK_Feed.framework */; };
 		A26824FB26CCDCFB0036AADC /* TableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26824FA26CCDCFB0036AADC /* TableFooterView.swift */; };
+		A268252826CD38C70036AADC /* StringRectHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268252226CD38C70036AADC /* StringRectHeight.swift */; };
+		A268252926CD38C70036AADC /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268252326CD38C70036AADC /* WebImageView.swift */; };
+		A268252A26CD38C70036AADC /* AssetsUIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268252426CD38C70036AADC /* AssetsUIColors.swift */; };
+		A268252B26CD38C70036AADC /* UIViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268252526CD38C70036AADC /* UIViewConstraints.swift */; };
+		A268252C26CD38C70036AADC /* UIViewBorders.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268252626CD38C70036AADC /* UIViewBorders.swift */; };
+		A268252D26CD38C70036AADC /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268252726CD38C70036AADC /* RoundImageView.swift */; };
 		A2E6F33C26BF80B20083D45B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6F33B26BF80B20083D45B /* AppDelegate.swift */; };
 		A2E6F33E26BF80B20083D45B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E6F33D26BF80B20083D45B /* SceneDelegate.swift */; };
 		A2E6F34526BF80B30083D45B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E6F34426BF80B30083D45B /* Assets.xcassets */; };
 		A2E6F34826BF80B30083D45B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E6F34626BF80B30083D45B /* LaunchScreen.storyboard */; };
-		A2E8830226C9EF1800E373DE /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E8830126C9EF1800E373DE /* WebImageView.swift */; };
-		A2E8830426CA811400E373DE /* StringRectHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E8830326CA811400E373DE /* StringRectHeight.swift */; };
 		A2E8830626CB910300E373DE /* CellHeightCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E8830526CB910300E373DE /* CellHeightCalculator.swift */; };
-		A2ED207226C8FE94007247FA /* UIViewBorders.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED206E26C8FE94007247FA /* UIViewBorders.swift */; };
-		A2ED207326C8FE94007247FA /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED206F26C8FE94007247FA /* RoundImageView.swift */; };
-		A2ED207426C8FE94007247FA /* AssetsUIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED207026C8FE94007247FA /* AssetsUIColors.swift */; };
-		A2ED207526C8FE94007247FA /* UIViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED207126C8FE94007247FA /* UIViewConstraints.swift */; };
 		A2ED207D26C8FEEC007247FA /* VKNetworkDataFetchet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED207826C8FEEC007247FA /* VKNetworkDataFetchet.swift */; };
 		A2ED207E26C8FEEC007247FA /* VKNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED207926C8FEEC007247FA /* VKNetworkService.swift */; };
 		A2ED207F26C8FEEC007247FA /* VKApiConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2ED207A26C8FEEC007247FA /* VKApiConstants.swift */; };
@@ -42,19 +42,19 @@
 		48AD9B9E16EA6B6FC79494A3 /* Pods-VK Feed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VK Feed.release.xcconfig"; path = "Target Support Files/Pods-VK Feed/Pods-VK Feed.release.xcconfig"; sourceTree = "<group>"; };
 		96F5AEDB052CCA56F3F3536B /* Pods_VK_Feed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VK_Feed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26824FA26CCDCFB0036AADC /* TableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableFooterView.swift; sourceTree = "<group>"; };
+		A268252226CD38C70036AADC /* StringRectHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringRectHeight.swift; sourceTree = "<group>"; };
+		A268252326CD38C70036AADC /* WebImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
+		A268252426CD38C70036AADC /* AssetsUIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsUIColors.swift; sourceTree = "<group>"; };
+		A268252526CD38C70036AADC /* UIViewConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewConstraints.swift; sourceTree = "<group>"; };
+		A268252626CD38C70036AADC /* UIViewBorders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewBorders.swift; sourceTree = "<group>"; };
+		A268252726CD38C70036AADC /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		A2E6F33826BF80B20083D45B /* VK Feed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK Feed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2E6F33B26BF80B20083D45B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2E6F33D26BF80B20083D45B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A2E6F34426BF80B30083D45B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2E6F34726BF80B30083D45B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2E6F34926BF80B30083D45B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2E8830126C9EF1800E373DE /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
-		A2E8830326CA811400E373DE /* StringRectHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringRectHeight.swift; sourceTree = "<group>"; };
 		A2E8830526CB910300E373DE /* CellHeightCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeightCalculator.swift; sourceTree = "<group>"; };
-		A2ED206E26C8FE94007247FA /* UIViewBorders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewBorders.swift; sourceTree = "<group>"; };
-		A2ED206F26C8FE94007247FA /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
-		A2ED207026C8FE94007247FA /* AssetsUIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsUIColors.swift; sourceTree = "<group>"; };
-		A2ED207126C8FE94007247FA /* UIViewConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewConstraints.swift; sourceTree = "<group>"; };
 		A2ED207826C8FEEC007247FA /* VKNetworkDataFetchet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKNetworkDataFetchet.swift; sourceTree = "<group>"; };
 		A2ED207926C8FEEC007247FA /* VKNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKNetworkService.swift; sourceTree = "<group>"; };
 		A2ED207A26C8FEEC007247FA /* VKApiConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKApiConstants.swift; sourceTree = "<group>"; };
@@ -113,6 +113,19 @@
 			path = TableFooter;
 			sourceTree = "<group>";
 		};
+		A268252126CD38C70036AADC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A268252226CD38C70036AADC /* StringRectHeight.swift */,
+				A268252326CD38C70036AADC /* WebImageView.swift */,
+				A268252426CD38C70036AADC /* AssetsUIColors.swift */,
+				A268252526CD38C70036AADC /* UIViewConstraints.swift */,
+				A268252626CD38C70036AADC /* UIViewBorders.swift */,
+				A268252726CD38C70036AADC /* RoundImageView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		A2E6F32F26BF80B20083D45B = {
 			isa = PBXGroup;
 			children = (
@@ -138,7 +151,7 @@
 				A2ED207626C8FEEC007247FA /* NetworkServices */,
 				A2ED20A226C9098F007247FA /* Auth */,
 				A2ED208326C8FF46007247FA /* NewsFeed */,
-				A2ED206D26C8FE94007247FA /* Helpers */,
+				A268252126CD38C70036AADC /* Helpers */,
 				A2E6F35526BF96750083D45B /* Resources */,
 				A2E6F34926BF80B30083D45B /* Info.plist */,
 			);
@@ -161,20 +174,6 @@
 				A2E6F34626BF80B30083D45B /* LaunchScreen.storyboard */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		A2ED206D26C8FE94007247FA /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				A2ED206E26C8FE94007247FA /* UIViewBorders.swift */,
-				A2E8830126C9EF1800E373DE /* WebImageView.swift */,
-				A2ED206F26C8FE94007247FA /* RoundImageView.swift */,
-				A2ED207026C8FE94007247FA /* AssetsUIColors.swift */,
-				A2ED207126C8FE94007247FA /* UIViewConstraints.swift */,
-				A2E8830326CA811400E373DE /* StringRectHeight.swift */,
-			);
-			name = Helpers;
-			path = App/Helpers;
 			sourceTree = "<group>";
 		};
 		A2ED207626C8FEEC007247FA /* NetworkServices */ = {
@@ -342,29 +341,29 @@
 			files = (
 				A2ED20A126C90989007247FA /* AuthViewController.swift in Sources */,
 				A2E6F33C26BF80B20083D45B /* AppDelegate.swift in Sources */,
-				A2ED207526C8FE94007247FA /* UIViewConstraints.swift in Sources */,
 				A26824FB26CCDCFB0036AADC /* TableFooterView.swift in Sources */,
 				A2ED208A26C8FF59007247FA /* PostInfoView.swift in Sources */,
-				A2ED207326C8FE94007247FA /* RoundImageView.swift in Sources */,
-				A2ED207226C8FE94007247FA /* UIViewBorders.swift in Sources */,
 				A2ED208126C8FEEC007247FA /* VKResponseModels.swift in Sources */,
 				A2ED208C26C8FF59007247FA /* PostActionsView.swift in Sources */,
+				A268252A26CD38C70036AADC /* AssetsUIColors.swift in Sources */,
 				A2ED207F26C8FEEC007247FA /* VKApiConstants.swift in Sources */,
-				A2ED207426C8FE94007247FA /* AssetsUIColors.swift in Sources */,
+				A268252C26CD38C70036AADC /* UIViewBorders.swift in Sources */,
 				A2ED208E26C8FF59007247FA /* FeedTableViewCell.swift in Sources */,
 				A2ED208026C8FEEC007247FA /* VKAuthService.swift in Sources */,
 				A2ED209626C900D8007247FA /* NewsFeedViewController.swift in Sources */,
+				A268252926CD38C70036AADC /* WebImageView.swift in Sources */,
+				A268252B26CD38C70036AADC /* UIViewConstraints.swift in Sources */,
 				A2ED207E26C8FEEC007247FA /* VKNetworkService.swift in Sources */,
 				A2ED207D26C8FEEC007247FA /* VKNetworkDataFetchet.swift in Sources */,
 				A2ED209D26C9036A007247FA /* NewsFeedPresenter.swift in Sources */,
 				A2E8830626CB910300E373DE /* CellHeightCalculator.swift in Sources */,
 				A2ED208D26C8FF59007247FA /* PostContentView.swift in Sources */,
 				A2ED208B26C8FF59007247FA /* PostActionButton.swift in Sources */,
+				A268252D26CD38C70036AADC /* RoundImageView.swift in Sources */,
 				A2ED209026C8FF71007247FA /* NewsFeedModels.swift in Sources */,
-				A2E8830426CA811400E373DE /* StringRectHeight.swift in Sources */,
 				A2E6F33E26BF80B20083D45B /* SceneDelegate.swift in Sources */,
 				A2ED209C26C9036A007247FA /* NewsFeedInteractor.swift in Sources */,
-				A2E8830226C9EF1800E373DE /* WebImageView.swift in Sources */,
+				A268252826CD38C70036AADC /* StringRectHeight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

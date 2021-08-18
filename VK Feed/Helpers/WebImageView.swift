@@ -14,7 +14,7 @@ extension UIImageView{
         
         let request = URLRequest(url: url)
         
-        if let cachedResponse = URLCache.shared.cachedResponse(for: request){
+        if let cachedResponse = URLCache.shared.cachedResponse(for: request) {
             setImage(from: cachedResponse.data)
             return
         }
@@ -27,7 +27,7 @@ extension UIImageView{
         }
     }
     
-    private func setImage(from data: Data?){
+    private func setImage(from data: Data?) {
         guard let data = data else { return }
         let image = UIImage(data: data)
         DispatchQueue.main.async {
@@ -35,7 +35,7 @@ extension UIImageView{
         }
     }
     
-    private func cacheURLResponse(request: URLRequest, data: Data?, response: URLResponse?){
+    private func cacheURLResponse(request: URLRequest, data: Data?, response: URLResponse?) {
         guard let data = data, let response = response else { return }
         let cachedResponse = CachedURLResponse(response: response, data: data)
         URLCache.shared.storeCachedResponse(cachedResponse, for: request)

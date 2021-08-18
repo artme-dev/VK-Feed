@@ -41,8 +41,8 @@ extension UIView {
                         leading: NSLayoutXAxisAnchor?,
                         bottom: NSLayoutYAxisAnchor?,
                         trailing: NSLayoutXAxisAnchor?,
-                        padding: UIEdgePaddings = .zero,
-                        size: CGSize = .zero) {
+                        padding: UIEdgePaddings = .zero)
+    {
         
         if let top = top, let topPadding = padding.top {
             topAnchor.constraint(equalTo: top, constant: topPadding).isActive = true
@@ -55,12 +55,6 @@ extension UIView {
         }
         if let trailing = trailing, let trailingPadding = padding.trailing {
             trailingAnchor.constraint(equalTo: trailing, constant: -trailingPadding).isActive = true
-        }
-        if size.width != 0 {
-            widthAnchor.constraint(equalToConstant: size.width).isActive = true
-        }
-        if size.height != 0 {
-            heightAnchor.constraint(equalToConstant: size.height).isActive = true
         }
     }
     
