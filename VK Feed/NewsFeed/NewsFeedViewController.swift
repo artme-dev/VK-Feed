@@ -17,12 +17,7 @@ class NewsFeedViewController: UITableViewController {
     var interactor: NewsFeedBusinessLogic?
     private var revealedPostIds = Set<Int>()
     
-    private var postsViewModel: [FeedCellViewModel]?{
-        didSet{
-            self.tableView.reloadData()
-            tableRefreshControl.endRefreshing()
-        }
-    }
+    private var postsViewModel: [FeedCellViewModel]?
     private var cellHeights: [CellHeights]?
     
     private let tableRefreshControl: UIRefreshControl = {
@@ -47,8 +42,8 @@ class NewsFeedViewController: UITableViewController {
         setup()
         configureTableView()
         
-        tableRefreshControl.beginRefreshing()
-        tableRefreshControl.sendActions(for: .valueChanged)
+        self.tableRefreshControl.beginRefreshing()
+        self.tableRefreshControl.sendActions(for: .valueChanged)
     }
     
     private func configureTableView(){
@@ -65,6 +60,7 @@ class NewsFeedViewController: UITableViewController {
     
     @objc private func refreshTableData(){
         interactor?.fetchFeed()
+        revealedPostIds = Set<Int>()
     }
     
     // MARK: - Table view data source
@@ -122,18 +118,24 @@ extension NewsFeedViewController: NewsFeedDisplayLogic{
     func displayFeed(viewModel: NewsFeed.ShowPosts.ViewModel) {
         DispatchQueue.main.async {
             [weak self] in
-            self?.postsViewModel = viewModel.postsModels
-            self?.cellHeights = viewModel.cellHeights
             self?.footerView.isFeedEndFooter = !viewModel.hasContinuation
+            self?.cellHeights = viewModel.cellHeights
+            self?.postsViewModel = viewModel.postsModels
+            self?.tableView.reloadData()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                self?.tableRefreshControl.endRefreshing()
+            }
         }
     }
     
     func displayFeedContinuation(viewModel: NewsFeed.ShowPosts.ViewModel) {
         DispatchQueue.main.async {
             [weak self] in
-            self?.postsViewModel?.append(contentsOf: viewModel.postsModels)
-            self?.cellHeights?.append(contentsOf: viewModel.cellHeights)
             self?.footerView.isFeedEndFooter = !viewModel.hasContinuation
+            self?.cellHeights?.append(contentsOf: viewModel.cellHeights)
+            self?.postsViewModel?.append(contentsOf: viewModel.postsModels)
+            self?.tableView.reloadData()
         }
     }
 }

@@ -14,7 +14,7 @@ protocol NetworkDataFetcher {
 final class VKNetworkDataFetcher: NetworkDataFetcher{
     
     private let networkService: NetworkService
-    private static let postCount = 15
+    private static let postCount = 25
     
     init(networkService: NetworkService = VKNetworkService()){
         self.networkService = networkService
