@@ -31,6 +31,7 @@ final class VKNetworkService: NetworkService{
                 }
                 return
             }
+
             
             completion(data, error)
         }.resume()

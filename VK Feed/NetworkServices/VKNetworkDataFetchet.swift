@@ -8,20 +8,25 @@
 import Foundation
 
 protocol NetworkDataFetcher {
-    func fetchFeed(completion: @escaping (VKFeedResponse?)->())
+    func fetchFeed(startFrom: String?, completion: @escaping (VKFeedResponse?)->())
 }
 
 final class VKNetworkDataFetcher: NetworkDataFetcher{
     
     private let networkService: NetworkService
+    private static let postCount = 15
     
     init(networkService: NetworkService = VKNetworkService()){
         self.networkService = networkService
     }
     
-    func fetchFeed(completion: @escaping (VKFeedResponse?)->()){
-        let filterParams = ["filters": "post,photo"]
-        networkService.request(path: VKApiConstants.Paths.feed, params: filterParams) { data, error in
+    func fetchFeed(startFrom: String? = nil, completion: @escaping (VKFeedResponse?)->()){
+        var params = [String: String]()
+        params["filters"] = "post,photo"
+        params["start_from"] = startFrom
+        params["count"] = String(VKNetworkDataFetcher.postCount)
+            
+        networkService.request(path: VKApiConstants.Paths.feed, params: params) { data, error in
             guard let data = data else {
                 completion(nil)
                 return

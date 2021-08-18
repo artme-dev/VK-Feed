@@ -23,7 +23,4 @@ extension UIColor{
     static var vkBorder: UIColor {
         return UIColor(named: "VkBorderColor")!
     }
-    static var placeholder: UIColor {
-        return UIColor(named: "PlaceholderColor")!
-    }
 }

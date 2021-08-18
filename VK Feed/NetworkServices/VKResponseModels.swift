@@ -15,6 +15,7 @@ struct VKFeedResponse: Decodable{
     let items: [VKFeedItem]
     let groups: [VKGroup]
     let profiles : [VKProfile]
+    let nextFrom: String?
 }
 
 struct VKFeedItem: Decodable{
